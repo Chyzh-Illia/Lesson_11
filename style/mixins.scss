@@ -1,0 +1,30 @@
+@mixin flex($jc,$ai,$gp){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+}
+
+@mixin Graphik($cl,$fs,$fw){
+    font-family: $font;
+    color: $cl;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin GraphikReg($cl,$fs,$lh){
+    font-family: 'Graphik Reg';
+    color: $cl;
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $regular;
+}
+
+@mixin GraphikBold($cl,$fs,$lh){
+    font-family: 'Graphik Bold';
+    color: $cl;
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $semibold;
+}
+

@@ -1,0 +1,480 @@
+@font-face {
+  font-family: "Graphik Reg";
+  src: url(../fonts/GraphikLCG-Regular.ttf);
+}
+@font-face {
+  font-family: "Graphik Bold";
+  src: url(..//fonts/GraphikLCG-Semibold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Graphik Reg";
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 15px 35px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 16px;
+  line-height: none;
+  font-weight: 600;
+}
+.btn-orange {
+  background-color: #FF6336;
+  border: 1px solid #FF6336;
+  color: #fff;
+}
+.btn-dark {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+.header .logo__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 51px;
+}
+.header .logo__nav .nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.header .logo__nav .nav .menu-item {
+  padding: 37px 20px;
+}
+.header .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.promo {
+  padding: 43px 0;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(20, 30px)/repeat(20, 1fr);
+}
+.promo h1 {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 65px;
+  line-height: 70px;
+  font-weight: 600;
+  grid-area: 1/2/8/11;
+  display: inline-grid;
+}
+.promo-text {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  grid-area: 9/2/14/10;
+  display: inline-grid;
+}
+.promo span {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  grid-area: 19/2/20/8;
+  display: inline-grid;
+}
+.promo .buttons {
+  display: flex;
+  gap: 10px;
+  grid-area: 16/2/18/7;
+}
+.promo .buttons > .btn {
+  padding: 20px 35px;
+}
+.promo img {
+  grid-area: 3/10/21/21;
+}
+
+.brands {
+  background-color: #FF9C7D;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 80px;
+  padding: 96px 0;
+}
+.brands-title {
+  grid-area: 1/1/1/7;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+}
+.brands-title-text {
+  width: 60%;
+  text-align: center;
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+.benefits {
+  display: grid;
+  grid-template: repeat(4, 1fr)/0fr 0fr;
+  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+  row-gap: 200px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+.benefits-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-direction: column;
+}
+.benefits-text .title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+.benefits-text .subtitle {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.benefits-text .link {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.benefits .benefits-gif .gif {
+  min-width: 632px;
+  min-height: 632px;
+  width: 100%;
+  height: 100%;
+}
+
+.localize {
+  background-color: #FFF8E4;
+  padding: 110px 0;
+  display: grid;
+  grid-template: repeat(3, 0fr)/repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 78px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+.localize-title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+  text-align: center;
+  align-self: center;
+  grid-area: 1/1/1/4;
+}
+.localize .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+}
+.localize .card-title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 25px;
+  line-height: none;
+  font-weight: 600;
+}
+.localize .card-subtitle {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.boost {
+  padding: 120px 0;
+}
+.boost-title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.boost .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+}
+.boost .cards .card {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-direction: column;
+}
+.boost .cards .card-img {
+  height: 200px;
+}
+.boost .cards .card-title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.boost .cards .card-text {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.boost .cards .card-link {
+  text-decoration: underline;
+}
+
+.edward {
+  background-color: #C9E8F2;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+.edward-info .text {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.edward-info .subtext {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.cake {
+  background-color: #DABC98;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  padding: 90px 0;
+  width: 100%;
+}
+.cake-title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.cake .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  border-left: 1px solid #000;
+  padding: 70px 70px;
+}
+
+.integrate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  padding: 120px 0;
+}
+.integrate-title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 65px;
+  line-height: 75px;
+  font-weight: 600;
+  text-align: center;
+}
+.integrate-subtitle {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.integrate > .btn {
+  padding: 25px 35px;
+}
+
+.localization {
+  background-color: #FF9C7D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 140px 0;
+  flex-direction: column;
+}
+.localization-title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 65px;
+  line-height: 75px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.localization-subtitle {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 54px;
+}
+
+.footer .first {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 0;
+  padding: 95px 0;
+}
+.footer .first-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  flex-direction: column;
+}
+.footer .first-info > .title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.footer .first-info > .text {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.footer .first-info > .link {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.footer .first-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  width: 60%;
+}
+.footer .first-nav .column > .title {
+  font-family: "Graphik Bold";
+  color: #000;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 21px;
+  margin-left: 15px;
+}
+.footer .first-nav .column > .menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  flex-direction: column;
+}
+.footer .first-nav .column > .menu .menu-item {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+.footer .second {
+  padding: 52px 0;
+  margin: 0 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  border-top: 1px solid #000;
+}
+.footer .second .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer .second .brand-text {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+.footer .second .rights {
+  margin-right: 76px;
+}
+.footer .second .rights-text {
+  font-family: "Graphik Reg";
+  color: #000;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
